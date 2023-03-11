@@ -1,0 +1,8 @@
+
+# using defaults from Goolge style
+
+BasedOnStyle: Google
+IndentWidth: 4
+BreakBeforeBraces: Allman
+ColumnLimit: 120
+AllowShortFunctionsOnASingleLine: None
