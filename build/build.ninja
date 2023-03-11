@@ -56,6 +56,20 @@ build CMakeFiles/main_exec.dir/src/main.c.o: C_COMPILER__main_exec_Debug /worksp
   OBJECT_DIR = CMakeFiles/main_exec.dir
   OBJECT_FILE_DIR = CMakeFiles/main_exec.dir/src
 
+build CMakeFiles/main_exec.dir/src/developer.c.o: C_COMPILER__main_exec_Debug /workspaces/Whitespace/src/developer.c || cmake_object_order_depends_target_main_exec
+  DEP_FILE = CMakeFiles/main_exec.dir/src/developer.c.o.d
+  FLAGS = -g -Wall -Wextra -pedantic -O0 -std=gnu11
+  INCLUDES = -I/workspaces/Whitespace/include
+  OBJECT_DIR = CMakeFiles/main_exec.dir
+  OBJECT_FILE_DIR = CMakeFiles/main_exec.dir/src
+
+build CMakeFiles/main_exec.dir/src/developer_group.c.o: C_COMPILER__main_exec_Debug /workspaces/Whitespace/src/developer_group.c || cmake_object_order_depends_target_main_exec
+  DEP_FILE = CMakeFiles/main_exec.dir/src/developer_group.c.o.d
+  FLAGS = -g -Wall -Wextra -pedantic -O0 -std=gnu11
+  INCLUDES = -I/workspaces/Whitespace/include
+  OBJECT_DIR = CMakeFiles/main_exec.dir
+  OBJECT_FILE_DIR = CMakeFiles/main_exec.dir/src
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target main_exec
@@ -64,7 +78,7 @@ build CMakeFiles/main_exec.dir/src/main.c.o: C_COMPILER__main_exec_Debug /worksp
 #############################################
 # Link the executable main_exec
 
-build main_exec: C_EXECUTABLE_LINKER__main_exec_Debug CMakeFiles/main_exec.dir/src/main.c.o
+build main_exec: C_EXECUTABLE_LINKER__main_exec_Debug CMakeFiles/main_exec.dir/src/main.c.o CMakeFiles/main_exec.dir/src/developer.c.o CMakeFiles/main_exec.dir/src/developer_group.c.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/main_exec.dir
   POST_BUILD = :

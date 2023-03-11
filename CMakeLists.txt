@@ -12,7 +12,7 @@ set(CMAKE_C_STANDARD_REQUIRED True)
 add_compile_options(-Wall -Wextra -pedantic -O0)
 
 # add an executabel and assign files to it
-add_executable(main_exec src/main.c)
+add_executable(main_exec src/main.c src/developer.c src/developer_group.c)
 
 # add the include directories
 target_include_directories(main_exec PUBLIC include)
