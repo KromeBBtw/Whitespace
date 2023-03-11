@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/workspaces/Whitespace/build",
+  "command": "/usr/bin/clang -I/workspaces/Whitespace/include -g -Wall -Wextra -pedantic -O0 -std=gnu11 -o CMakeFiles/main_exec.dir/src/main.c.o -c /workspaces/Whitespace/src/main.c",
+  "file": "/workspaces/Whitespace/src/main.c"
+}
+]
