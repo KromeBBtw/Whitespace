@@ -2,7 +2,7 @@
 #include <string.h>
 
 typedef struct developer_group{
-    long double logo;
+    char logo;
 } developer_group;
 
 int main(){
@@ -30,5 +30,11 @@ strcpy(logo.image_1,
 
 puts(logo.image1);
 
+display (image_1);
 resturn 0;
+}
+
+void display(struct developer_group) {
+   printf("\nDisplaying group logo\n");
+   printf("Name: %c", logo.image_1);
 }
