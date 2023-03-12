@@ -1,9 +1,6 @@
 #include <stdio.h>
 #include <string.h>
 
-max_name_length = 7;
-max_alias_length = 8;
-
 typedef struct developer{
     char name[max_name_length];
     char alias[max_alias_length];
