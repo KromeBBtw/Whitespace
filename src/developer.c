@@ -1,15 +1,18 @@
 #include <stdio.h>
 #include <string.h>
 
-typedef struct developer_group{
-    char name[7];
-    char alias[8];
-} developer_group;
+max_name_length = 7;
+max_alias_length = 8;
+
+typedef struct developer{
+    char name[max_name_length];
+    char alias[max_alias_length];
+} developer;
 
 int main(){
 
-developer_group dev1;
-developer_group dev2;
+developer dev1;
+developer dev2;
 
 strcpy(dev1.name, "Malian");
 strcpy(dev2.name, "Konrad");
