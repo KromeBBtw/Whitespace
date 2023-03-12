@@ -9,4 +9,6 @@ typedef struct developer{
     char alias[max_alias_length];
 } developer;
 
+void developer_init(developer *developer, char name[], char alias[]);
+
 #endif

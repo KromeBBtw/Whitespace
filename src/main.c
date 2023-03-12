@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include <string.h>
 
+//Including the developer struct
+#include "developer.h"
+
 typedef struct developer_group{
     char name[7];
     char alias[8];
@@ -8,6 +11,8 @@ typedef struct developer_group{
 
 int main(){
 
+
+/*
 char sel = 0;
 
 developer_group dev1;
@@ -51,5 +56,6 @@ switch (scanf("%c", &sel);
                 printf("...\n");
                 break;
 }
+*/
 return 0;
 }
