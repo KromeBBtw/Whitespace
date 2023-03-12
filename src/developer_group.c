@@ -1,11 +1,9 @@
 #include <stdio.h>
 #include <string.h>
 
-typedef struct developer_group{
-    char logo;
-} developer_group;
+#include <developer_group.h>
 
-int main(){
+void developer_group_init(developer_group *developer_group, char logo[]);
 
 developer_group image_1;
 
