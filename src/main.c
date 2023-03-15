@@ -11,6 +11,27 @@ typedef struct developer_group{
 
 int main(){
 
+// ---------------------------------------------------------------------------------
+
+//when program starts
+// -> show Interface while choice option (List Developer, Print Goup Logo, Print Group, Exit)
+
+//init developer_group with name and alias of each and the group logo
+
+//case List Developer 
+        //print name and alias of each developer on terminal
+
+//case Print Group Logo
+        //print the logo in developer_group on the teriminal
+
+//case Print Group
+        //print List Developer and Group Logo
+
+//case Exit
+        //close the application (delete all memory)
+
+// ---------------------------------------------------------------------------------
+
 
 /*
 char sel = 0;

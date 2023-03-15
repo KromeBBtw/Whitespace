@@ -8,9 +8,9 @@
 
 void developer_init(developer *developer, char name[], char alias[])
 {
-    if(sizeof(name) > max_name_length || sizeof(alias) > max_alias_length)
+    if(developer == NULL || name == NULL || alias == NULL)
     {
-        printf("Alias or Name is to big to be displayed");
+        printf("ERROR : nullptr in developer_intit found");
         return;
     }
 
