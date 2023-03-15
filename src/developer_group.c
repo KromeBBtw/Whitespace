@@ -5,7 +5,7 @@
 
 void developer_group_init(developer_group *developer_group, developer *dev1, developer *dev2, char logo[])
 {
-   if(developer_group_init == NULL || dev1 == NULL || dev2 == NULL || logo == NULL)
+   if(developer_group == NULL || dev1 == NULL || dev2 == NULL || logo == NULL)
    {
       printf("ERROR : nullptr in developer_group_init found");
       return;
@@ -18,11 +18,13 @@ void developer_group_init(developer_group *developer_group, developer *dev1, dev
 
 }
 
-void print_developer(developer *developer[])
+void print_developer_group(developer developer[])
 {
-   for(int i = DEVELOPER_AMOUNT; i < DEVELOPER_AMOUNT; i++)
+   for(int i = 0; i < DEVELOPER_AMOUNT; i++)
    {
-      printf("%s", *developer[i]);
+      printf("Developer 1 ist: ");
+      print_developer(&developer[i]);
+      printf("\n");
    }
 }
 

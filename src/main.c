@@ -38,7 +38,7 @@ developer_init(&Malian, "Malian", "Krome");
 developer_group dev_group;
 developer_group_init(&dev_group, &Conrad, &Malian, "(*_*)");
 
-print_developer(&dev_group.developer);
+print_developer_group(dev_group.developer);
 
 
 //tests_end
