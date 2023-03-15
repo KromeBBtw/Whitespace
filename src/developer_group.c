@@ -1,10 +1,23 @@
 #include <stdio.h>
 #include <string.h>
+#include "developer_group.h"
 
-#include <developer_group.h>
 
-void developer_group_init(developer_group *developer_group, char logo[]);
+void developer_group_init(developer_group *developer_group, developer *dev1, developer *dev2, char logo[])
+{
+   if(developer_group_init == NULL || dev1 == NULL || dev2 == NULL || logo == NULL)
+   {
+      printf("ERROR : nullptr in developer_group_init found");
+      return;
+   }
 
+   developer_group->developer[0] = *dev1;
+   developer_group->developer[1] = *dev2;
+   strncpy(developer_group->logo, logo, strlen(logo) + 1);
+
+}
+
+/*
 developer_group image_1;
 
 strcpy(logo.image_1, 
@@ -36,3 +49,4 @@ void display(struct developer_group) {
    printf("\nDisplaying group logo\n");
    printf("Name: %c", logo.image_1);
 }
+*/
