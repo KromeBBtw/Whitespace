@@ -13,7 +13,8 @@ void developer_group_init(developer_group *developer_group, developer *dev1, dev
 
    developer_group->developer[0] = *dev1;
    developer_group->developer[1] = *dev2;
-   strncpy(developer_group->logo, logo, strlen(logo) + 1);
+   strncpy(developer_group->logo, 
+      " __  __     __    \n/\\ \\_\\ \\   /\\ \\   \n\\ \\  __ \\  \\ \\ \\ \n \\ \\_\\ \\_\\  \\ \\_\\   \n  \\/_/\\/_/   \\/_/ \n", strlen(logo) + 1);
 
 }
 
