@@ -14,4 +14,7 @@ typedef struct developer_group{
 
 void developer_group_init(developer_group *developer_group, developer *dev1, developer *dev2, char logo[]);
 
+void print_developer(developer *developer[]);
+
+
 #endif

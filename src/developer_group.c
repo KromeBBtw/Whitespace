@@ -17,6 +17,14 @@ void developer_group_init(developer_group *developer_group, developer *dev1, dev
 
 }
 
+void print_developer(developer *developer[])
+{
+   for(int i = DEVELOPER_AMOUNT; i < DEVELOPER_AMOUNT; i++)
+   {
+      printf("%s", *developer[i]);
+   }
+}
+
 /*
 developer_group image_1;
 

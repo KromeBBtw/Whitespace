@@ -2,12 +2,8 @@
 #include <string.h>
 
 //Including the developer struct
-#include "developer.h"
+#include "developer_group.h"
 
-typedef struct developer_group{
-    char name[7];
-    char alias[8];
-} developer_group;
 
 int main(){
 
@@ -32,6 +28,20 @@ int main(){
 
 // ---------------------------------------------------------------------------------
 
+
+//tests
+
+developer Conrad, Malian;
+developer_init(&Conrad, "Conrad", "crucey");
+developer_init(&Malian, "Malian", "Krome");
+
+developer_group dev_group;
+developer_group_init(&dev_group, &Conrad, &Malian, "(*_*)");
+
+print_developer(&dev_group.developer);
+
+
+//tests_end
 
 /*
 char sel = 0;

@@ -1,1 +1,0 @@
-/usr/bin/clang -g CMakeFiles/main_exec.dir/src/test.c.o -o main_exec 
