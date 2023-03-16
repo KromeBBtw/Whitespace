@@ -11,6 +11,4 @@ typedef struct developer{
 
 void developer_init(developer *developer, char name[], char alias[]);
 
-void print_developer(developer *developer);
-
 #endif
