@@ -18,7 +18,3 @@ void developer_init(developer *developer, char name[], char alias[])
     strncpy(developer->alias, alias, sizeof(developer->alias));
 }
 
-void print_developer(developer *developer)
-{
-    printf("%s", developer->name);
-}

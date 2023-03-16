@@ -18,13 +18,11 @@ void developer_group_init(developer_group *developer_group, developer *dev1, dev
 
 }
 
-void print_developer_group(developer developer[])
+void print_developer(developer developer[])
 {
    for(int i = 0; i < DEVELOPER_AMOUNT; i++)
    {
-      printf("Developer 1 ist: ");
-      print_developer(&developer[i]);
-      printf("\n");
+      printf("Developer %d ist : %s alias %s\n", i + 1, developer[i].name, developer[i].alias);
    }
 }
 
