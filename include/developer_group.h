@@ -12,20 +12,21 @@
 // declare a variable which can be globally accessed for developer_group
 extern char logo_template[];
 
-// create a struct to store the group logo and developer 
-typedef struct developer_group{
+// create a struct to store the group logo and developer
+typedef struct developer_group
+{
     char logo[MAX_LOGO_LENGTH];
     developer developer[DEVELOPER_AMOUNT];
 } developer_group;
 
 // function to define the developers and their aliases
-void developer_group_init(developer_group *const developer_group, const char dev1_name[], const char dev1_alias[], const char dev2_name[], const char dev2_alias[]);
+void developer_group_init(developer_group *const developer_group, const char dev1_name[], const char dev1_alias[],
+                          const char dev2_name[], const char dev2_alias[]);
 
 // function to print the developers, which have been initialized by the developer_group_init function
 void print_developer(const developer developer[]);
 
 // function to print the group logo
 void print_logo(const developer_group *const developer_group);
-
 
 #endif

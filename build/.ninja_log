@@ -42,3 +42,8 @@
 1	62	1679314009254252645	CMakeFiles/main_exec.dir/src/main.c.o	c8da79eee61e56af
 50	89	1679314009278252674	libdev_library.a	de7226349b8ffd2
 89	109	1679314009298252698	main_exec	b28ae2ccbeb3c58b
+1	36	1679314334462397316	CMakeFiles/main_exec.dir/src/main.c.o	c8da79eee61e56af
+0	49	1679314334474397321	CMakeFiles/dev_library.dir/src/developer.c.o	d7f5e5c128e666
+0	58	1679314334482397325	CMakeFiles/dev_library.dir/src/developer_group.c.o	a289586140c0a725
+58	95	1679314334518397340	libdev_library.a	de7226349b8ffd2
+95	114	1679314334538397349	main_exec	b28ae2ccbeb3c58b
