@@ -4,6 +4,8 @@
 //Including the developer struct
 #include "developer_group.h"
 
+char loop_status = 1;
+char input = 0;
 
 int main(){
 
@@ -27,10 +29,9 @@ int main(){
         //close the application (delete all memory)
 
 // ---------------------------------------------------------------------------------
-
-
 //tests
 
+/*Maybe put init's into loop, so the data is deleted when loop ends*/
 developer Conrad, Malian;
 developer_init(&Conrad, "Conrad", "crucey");
 developer_init(&Malian, "Malian", "Krome");
@@ -40,53 +41,39 @@ developer_group_init(&dev_group, &Conrad, &Malian, "(*_*)");
 
 print_developer(dev_group.developer);
 
+    while (loop_status)
+    {
+        printf("\033[4;92m========================\n");
+        printf("Choose your action: \n")
+        printf("List Developers \t\t[1]\n");
+        printf("Print Group Logo \t\t[2]\n");
+        printf("Print Group \t\t[3]\n");
+        printf("Exit \t\t[4]\n");
+        printf("========================\033[0m\n");
 
-//tests_end
+        printf("Enter your selection: ");
+        scanf("%s", input);
 
-/*
-char sel = 0;
-
-developer_group dev1;
-developer_group dev2;
-
-strcpy(dev1.name, "Malian");
-strcpy(dev2.name, "Konrad");
-
-strcpy(dev1.alias, "Student");
-strcpy(dev2.alias, "Student");
-
- 
-printf("========================\
-Choose your action:\
-List Developers [1]\
-Print Group Logo [2]\
-Print Group [3]\
-Exit [4]\n"
-========================");
-
-
-switch (scanf("%c", &sel);
-{
-	case1:
-		printf("%d\n", developer1.name);
-		printf("%d\n", developer1.alias);
-
-		printf("%d\n", developer2.name);
-		printf("%d\n", developer2.alian);
-		break;
-	case2:
-		printf("...\n");
-		break;
-        case3:
-                printf("...\n");
+        switch (input)
+        {
+            case 0:
+                printf("That was not a valid input!\n");
                 break;
-        case4:
-                printf("...\n");
-                break;  
-        default:
-                printf("...\n");
+            case 1:
+                print_developer()
                 break;
-}
-*/
+            case 2:
+                print_group_logo() /*still needs to be created*/
+                break;
+            case 3:
+                print_developer_group() /*still needs to be created*/
+            case 4:
+                loop_status = 0;
+                break;
+            default:
+                printf("That was not a valid input!\n");
+                break;
+        }
+    }
 return 0;
 }
