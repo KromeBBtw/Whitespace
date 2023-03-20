@@ -39,7 +39,7 @@ print_developer(dev_group.developer);
     while (loop_status)
     {
         printf("\033[4;92m========================\n");
-        printf("Choose your action: \n")
+        printf("Choose your action: \n");
         printf("List Developers \t\t[1]\n");
         printf("Print Group Logo \t\t[2]\n");
         printf("Print Group \t\t[3]\n");
@@ -51,17 +51,14 @@ print_developer(dev_group.developer);
 
         switch (input)
         {
-            case 0:
-                printf("That was not a valid input!\n");
-                break;
             case 1:
-                print_developer()
+                print_developer(dev_group.developer);
                 break;
             case 2:
-                print_group_logo() /*still needs to be created*/
+                print_logo(&dev_group);
                 break;
             case 3:
-                print_developer_group() /*still needs to be created*/
+                print_developer_group(dev_group.developer);
             case 4:
                 loop_status = 0;
                 break;

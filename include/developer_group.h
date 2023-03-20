@@ -18,5 +18,7 @@ void developer_group_init(developer_group *developer_group, char dev1_name[], ch
 
 void print_developer(developer developer[]);
 
+void print_logo(developer_group *developer_group);
+
 
 #endif
