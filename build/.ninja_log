@@ -4,3 +4,7 @@
 1	64	1678963936652507730	CMakeFiles/main_exec.dir/src/main.c.o	eab3dc619cc957f2
 1	67	1678963936656507795	CMakeFiles/main_exec.dir/src/developer_group.c.o	b3791ce8a3eaf750
 1	46	1678963936632507401	CMakeFiles/main_exec.dir/src/developer.c.o	5757b5bdf7f21734
+1	333	1679305807110154188	CMakeFiles/main_exec.dir/src/developer.c.o	277bd1c6b589a556
+0	37	1679305955298263257	CMakeFiles/main_exec.dir/src/main.c.o	c8da79eee61e56af
+1	24	1679306003722294531	CMakeFiles/main_exec.dir/src/developer_group.c.o	11fd1d74ce6f2ac5
+27	331	1679306004026294741	main_exec	1defde5d36b7dbe0
