@@ -5,9 +5,10 @@
 #include "developer.h"
 
 
-// developer init function to initialize a fiven developer with their name and alias
-void developer_init(developer *developer, char name[], char alias[])
+// developer init function to initialize a given developer with their name and alias
+void developer_init(developer *const developer, const char name[], const char alias[])
 {
+    
     // checking if one of the pointer is NULL 
     // if so display error message and return without execute the function 
     if(developer == NULL || name == NULL || alias == NULL)

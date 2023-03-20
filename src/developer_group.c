@@ -10,7 +10,7 @@ char logo_template[MAX_LOGO_LENGTH] = " __  __     __    \n/\\ \\_\\ \\   /\\ \\
 
 // initializing function of developer_group_init 
 // takes in from each developer their name and their alias
-void developer_group_init(developer_group *developer_group, char dev1_name[], char dev1_alias[], char dev2_name[], char dev2_alias[])
+void developer_group_init(developer_group *const developer_group, const char dev1_name[], const char dev1_alias[], const char dev2_name[], const char dev2_alias[])
 {
 
    // checking if one of the given pointer is NULL
@@ -32,7 +32,7 @@ void developer_group_init(developer_group *developer_group, char dev1_name[], ch
 
 
 // function to print the names and alias of the developer
-void print_developer(developer developer[])
+void print_developer(const developer developer[])
 {
    // for loop through the developer array of developer_group and printing them to the terminal
    for(int i = 0; i < DEVELOPER_AMOUNT; i++)
@@ -42,7 +42,7 @@ void print_developer(developer developer[])
 }
 
 // function to print the group_logo
-void print_logo(developer_group *developer_group)
+void print_logo(const developer_group *const developer_group)
 {
    // checking if the pointer is NULL
    // if so -> Error + return
