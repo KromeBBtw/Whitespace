@@ -5,7 +5,7 @@
 #include "developer_group.h"
 
 char loop_status = 1;
-char input = 0;
+int input = 0;
 
 int main(){
 
@@ -47,7 +47,7 @@ print_developer(dev_group.developer);
         printf("========================\033[0m\n");
 
         printf("Enter your selection: ");
-        scanf("%s", input);
+        scanf("%d", &input);
 
         switch (input)
         {
@@ -60,6 +60,7 @@ print_developer(dev_group.developer);
             case 3:
                 print_developer(dev_group.developer);
                 print_logo(&dev_group);
+                break;
             case 4:
                 loop_status = 0;
                 break;

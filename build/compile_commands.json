@@ -1,17 +1,17 @@
 [
 {
   "directory": "/workspaces/Whitespace/build",
-  "command": "/usr/bin/gcc -I/workspaces/Whitespace/include -g -Wall -Wextra -pedantic -O0 -std=gnu11 -o CMakeFiles/main_exec.dir/src/main.c.o -c /workspaces/Whitespace/src/main.c",
-  "file": "/workspaces/Whitespace/src/main.c"
-},
-{
-  "directory": "/workspaces/Whitespace/build",
-  "command": "/usr/bin/gcc -I/workspaces/Whitespace/include -g -Wall -Wextra -pedantic -O0 -std=gnu11 -o CMakeFiles/main_exec.dir/src/developer.c.o -c /workspaces/Whitespace/src/developer.c",
+  "command": "/usr/bin/gcc -I/workspaces/Whitespace/include -g -Wall -Wextra -pedantic -O0 -std=gnu11 -o CMakeFiles/dev_library.dir/src/developer.c.o -c /workspaces/Whitespace/src/developer.c",
   "file": "/workspaces/Whitespace/src/developer.c"
 },
 {
   "directory": "/workspaces/Whitespace/build",
-  "command": "/usr/bin/gcc -I/workspaces/Whitespace/include -g -Wall -Wextra -pedantic -O0 -std=gnu11 -o CMakeFiles/main_exec.dir/src/developer_group.c.o -c /workspaces/Whitespace/src/developer_group.c",
+  "command": "/usr/bin/gcc -I/workspaces/Whitespace/include -g -Wall -Wextra -pedantic -O0 -std=gnu11 -o CMakeFiles/dev_library.dir/src/developer_group.c.o -c /workspaces/Whitespace/src/developer_group.c",
   "file": "/workspaces/Whitespace/src/developer_group.c"
+},
+{
+  "directory": "/workspaces/Whitespace/build",
+  "command": "/usr/bin/gcc -I/workspaces/Whitespace/include -g -Wall -Wextra -pedantic -O0 -std=gnu11 -o CMakeFiles/main_exec.dir/src/main.c.o -c /workspaces/Whitespace/src/main.c",
+  "file": "/workspaces/Whitespace/src/main.c"
 }
 ]

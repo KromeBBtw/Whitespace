@@ -41,30 +41,55 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = /workspaces/Whitespace/build/
 # =============================================================================
+# Object build statements for STATIC_LIBRARY target dev_library
+
+
+#############################################
+# Order-only phony target for dev_library
+
+build cmake_object_order_depends_target_dev_library: phony || CMakeFiles/dev_library.dir
+
+build CMakeFiles/dev_library.dir/src/developer.c.o: C_COMPILER__dev_library_Debug /workspaces/Whitespace/src/developer.c || cmake_object_order_depends_target_dev_library
+  DEP_FILE = CMakeFiles/dev_library.dir/src/developer.c.o.d
+  FLAGS = -g -Wall -Wextra -pedantic -O0 -std=gnu11
+  INCLUDES = -I/workspaces/Whitespace/include
+  OBJECT_DIR = CMakeFiles/dev_library.dir
+  OBJECT_FILE_DIR = CMakeFiles/dev_library.dir/src
+
+build CMakeFiles/dev_library.dir/src/developer_group.c.o: C_COMPILER__dev_library_Debug /workspaces/Whitespace/src/developer_group.c || cmake_object_order_depends_target_dev_library
+  DEP_FILE = CMakeFiles/dev_library.dir/src/developer_group.c.o.d
+  FLAGS = -g -Wall -Wextra -pedantic -O0 -std=gnu11
+  INCLUDES = -I/workspaces/Whitespace/include
+  OBJECT_DIR = CMakeFiles/dev_library.dir
+  OBJECT_FILE_DIR = CMakeFiles/dev_library.dir/src
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target dev_library
+
+
+#############################################
+# Link the static library libdev_library.a
+
+build libdev_library.a: C_STATIC_LIBRARY_LINKER__dev_library_Debug CMakeFiles/dev_library.dir/src/developer.c.o CMakeFiles/dev_library.dir/src/developer_group.c.o
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = CMakeFiles/dev_library.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = libdev_library.a
+  TARGET_PDB = dev_library.a.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target main_exec
 
 
 #############################################
 # Order-only phony target for main_exec
 
-build cmake_object_order_depends_target_main_exec: phony || CMakeFiles/main_exec.dir
+build cmake_object_order_depends_target_main_exec: phony || cmake_object_order_depends_target_dev_library
 
 build CMakeFiles/main_exec.dir/src/main.c.o: C_COMPILER__main_exec_Debug /workspaces/Whitespace/src/main.c || cmake_object_order_depends_target_main_exec
   DEP_FILE = CMakeFiles/main_exec.dir/src/main.c.o.d
-  FLAGS = -g -Wall -Wextra -pedantic -O0 -std=gnu11
-  INCLUDES = -I/workspaces/Whitespace/include
-  OBJECT_DIR = CMakeFiles/main_exec.dir
-  OBJECT_FILE_DIR = CMakeFiles/main_exec.dir/src
-
-build CMakeFiles/main_exec.dir/src/developer.c.o: C_COMPILER__main_exec_Debug /workspaces/Whitespace/src/developer.c || cmake_object_order_depends_target_main_exec
-  DEP_FILE = CMakeFiles/main_exec.dir/src/developer.c.o.d
-  FLAGS = -g -Wall -Wextra -pedantic -O0 -std=gnu11
-  INCLUDES = -I/workspaces/Whitespace/include
-  OBJECT_DIR = CMakeFiles/main_exec.dir
-  OBJECT_FILE_DIR = CMakeFiles/main_exec.dir/src
-
-build CMakeFiles/main_exec.dir/src/developer_group.c.o: C_COMPILER__main_exec_Debug /workspaces/Whitespace/src/developer_group.c || cmake_object_order_depends_target_main_exec
-  DEP_FILE = CMakeFiles/main_exec.dir/src/developer_group.c.o.d
   FLAGS = -g -Wall -Wextra -pedantic -O0 -std=gnu11
   INCLUDES = -I/workspaces/Whitespace/include
   OBJECT_DIR = CMakeFiles/main_exec.dir
@@ -78,8 +103,9 @@ build CMakeFiles/main_exec.dir/src/developer_group.c.o: C_COMPILER__main_exec_De
 #############################################
 # Link the executable main_exec
 
-build main_exec: C_EXECUTABLE_LINKER__main_exec_Debug CMakeFiles/main_exec.dir/src/main.c.o CMakeFiles/main_exec.dir/src/developer.c.o CMakeFiles/main_exec.dir/src/developer_group.c.o
+build main_exec: C_EXECUTABLE_LINKER__main_exec_Debug CMakeFiles/main_exec.dir/src/main.c.o | libdev_library.a || libdev_library.a
   FLAGS = -g
+  LINK_LIBRARIES = libdev_library.a
   OBJECT_DIR = CMakeFiles/main_exec.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -112,6 +138,8 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
+build dev_library: phony libdev_library.a
+
 # =============================================================================
 # Folder targets.
 
@@ -120,7 +148,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /workspaces/Whitespace/build
 
-build all: phony main_exec
+build all: phony libdev_library.a main_exec
 
 # =============================================================================
 # Built-in targets

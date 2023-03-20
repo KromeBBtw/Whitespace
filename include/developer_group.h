@@ -7,7 +7,7 @@
 #define DEVELOPER_AMOUNT 2
 
 
-char logo_template[MAX_LOGO_LENGTH] = " __  __     __    \n/\\ \\_\\ \\   /\\ \\   \n\\ \\  __ \\  \\ \\ \\ \n \\ \\_\\ \\_\\  \\ \\_\\   \n  \\/_/\\/_/   \\/_/ \n";
+extern char logo_template[];
 
 typedef struct developer_group{
     char logo[MAX_LOGO_LENGTH];

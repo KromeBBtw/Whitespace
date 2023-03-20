@@ -1,3 +1,4 @@
+/workspaces/Whitespace/build/CMakeFiles/dev_library.dir
 /workspaces/Whitespace/build/CMakeFiles/main_exec.dir
 /workspaces/Whitespace/build/CMakeFiles/edit_cache.dir
 /workspaces/Whitespace/build/CMakeFiles/rebuild_cache.dir

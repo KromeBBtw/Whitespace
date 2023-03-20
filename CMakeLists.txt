@@ -18,7 +18,7 @@ add_library(dev_library STATIC
 target_include_directories(dev_library PUBLIC include)
 
 # add an executabel and assign files to it
-add_executable(main_exec src/main.c src/developer.c src/developer_group.c)
+add_executable(main_exec src/main.c)
 
 # add the include directories
 target_include_directories(main_exec PRIVATE include)

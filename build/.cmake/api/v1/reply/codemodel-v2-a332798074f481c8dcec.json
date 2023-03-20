@@ -15,7 +15,8 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -30,7 +31,8 @@
 					"name" : "whitespace_exam",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -38,8 +40,15 @@
 			[
 				{
 					"directoryIndex" : 0,
+					"id" : "dev_library::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dev_library-Debug-63d626c9de7f05e2fb5c.json",
+					"name" : "dev_library",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
 					"id" : "main_exec::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-main_exec-Debug-f4f4177ea8d09d934197.json",
+					"jsonFile" : "target-main_exec-Debug-54bc704a31ca01a91478.json",
 					"name" : "main_exec",
 					"projectIndex" : 0
 				}
