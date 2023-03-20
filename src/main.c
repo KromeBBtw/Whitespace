@@ -9,7 +9,7 @@ char loop_status = 1;
 
 // will be holding the input of the user 
 // value is depending on the wanted action of the user
-int input = 0;
+char input;
 
 int main(){
 
@@ -31,37 +31,38 @@ developer_group_init(&dev_group,"Conrad", "crucey", "Malian", "Krome");
         printf("Choose your action: \n");
         printf("List Developers \t\t[1]\n");
         printf("Print Group Logo \t\t[2]\n");
-        printf("Print Group \t\t[3]\n");
-        printf("Exit \t\t[4]\n");
+        printf("Print Group      \t\t[3]\n");
+        printf("Exit             \t\t[4]\n");
         printf("========================\033[0m\n");
 
 
         // getting the wanted action from the user via scanf and storing it in input(int)
         printf("Enter your selection: ");
-        scanf("%d", &input);
+        scanf("%s", &input);
 
 
         // dependent of the input from the user ->  different results will get shown
-        switch (input)
+        // input(string) gets casted back to int but now in ascii so 49 = 1, 50 = 2, ...
+        switch ((int)input)
         {
         // case Input = 1 -> show the names and alias of the developer
-            case 1:
+            case 49:
                 print_developer(dev_group.developer);
                 break;
         
         // case Input = 2 -> shows the logo of the group
-            case 2:
+            case 50:
                 print_logo(&dev_group);
                 break;
 
         // case Input = 3 -> show the names/alais of the developer and the grouplogo
-            case 3:
+            case 51:
                 print_developer(dev_group.developer);
                 print_logo(&dev_group);
                 break;
 
         // case Input = 4 -> ends the application with ending the loop with loop_status
-            case 4:
+            case 52:
                 loop_status = 0;
                 break;
 
