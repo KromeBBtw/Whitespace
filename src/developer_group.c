@@ -14,7 +14,7 @@ void developer_group_init(developer_group *developer_group, char dev1_name[], ch
    developer_init(&developer_group->developer[0], dev1_name, dev1_alias);
    developer_init(&developer_group->developer[1], dev2_name, dev2_alias);
    
-   strncpy(developer_group->logo, logo, MAX_LOGO_LENGTH);
+   strncpy(developer_group->logo, logo_template, MAX_LOGO_LENGTH);
 
 }
 

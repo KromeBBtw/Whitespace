@@ -58,7 +58,8 @@ print_developer(dev_group.developer);
                 print_logo(&dev_group);
                 break;
             case 3:
-                print_developer_group(dev_group.developer);
+                print_developer(dev_group.developer);
+                print_logo(&dev_group);
             case 4:
                 loop_status = 0;
                 break;
