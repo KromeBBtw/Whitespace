@@ -3,18 +3,18 @@
 #include "developer_group.h"
 
 
-void developer_group_init(developer_group *developer_group, developer *dev1, developer *dev2, char logo[])
+void developer_group_init(developer_group *developer_group, char dev1_name[], char dev1_alias[], char dev2_name[], char dev2_alias[])
 {
-   if(developer_group == NULL || dev1 == NULL || dev2 == NULL || logo == NULL)
+   if(developer_group == NULL || dev1_name == NULL || dev2_name == NULL)
    {
       printf("ERROR : nullptr in developer_group_init found");
       return;
    }
 
-   developer_group->developer[0] = *dev1;
-   developer_group->developer[1] = *dev2;
+   developer_init(&developer_group->developer[0], dev1_name, dev1_alias);
+   developer_init(&developer_group->developer[1], dev2_name, dev2_alias);
    strncpy(developer_group->logo, 
-      " __  __     __    \n/\\ \\_\\ \\   /\\ \\   \n\\ \\  __ \\  \\ \\ \\ \n \\ \\_\\ \\_\\  \\ \\_\\   \n  \\/_/\\/_/   \\/_/ \n", strlen(logo) + 1);
+      " __  __     __    \n/\\ \\_\\ \\   /\\ \\   \n\\ \\  __ \\  \\ \\ \\ \n \\ \\_\\ \\_\\  \\ \\_\\   \n  \\/_/\\/_/   \\/_/ \n", 50);
 
 }
 

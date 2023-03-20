@@ -31,13 +31,8 @@ int main(){
 // ---------------------------------------------------------------------------------
 //tests
 
-/*Maybe put init's into loop, so the data is deleted when loop ends*/
-developer Conrad, Malian;
-developer_init(&Conrad, "Conrad", "crucey");
-developer_init(&Malian, "Malian", "Krome");
-
 developer_group dev_group;
-developer_group_init(&dev_group, &Conrad, &Malian, "(*_*)");
+developer_group_init(&dev_group,"Conrad", "crucey", "Malian", "Krome");
 
 print_developer(dev_group.developer);
 

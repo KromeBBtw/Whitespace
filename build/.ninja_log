@@ -1,17 +1,6 @@
 # ninja log v5
-33	112	1678963535621946050	build.ninja	ccbf4878e8693c3
-260	299	1678963503449505554	main_exec	1be42296ba975ede
-0	226	1678963503377504694	CMakeFiles/main_exec.dir/src/main.c.o	1c08bfe1801aa007
-1	260	1678963503409505076	CMakeFiles/main_exec.dir/src/developer_group.c.o	5e251731a3f5fa61
-0	240	1678963503389504837	CMakeFiles/main_exec.dir/src/developer.c.o	28c2fe9e1ddb009f
-0	88	1678963538117982656	CMakeFiles/main_exec.dir/src/developer.c.o	5757b5bdf7f21734
-0	92	1678963538121982715	CMakeFiles/main_exec.dir/src/main.c.o	eab3dc619cc957f2
-1	94	1678963538117982656	CMakeFiles/main_exec.dir/src/developer_group.c.o	b3791ce8a3eaf750
-94	131	1678963538161983302	main_exec	6f37db89bf376c5
-1	32	1678963578902634224	CMakeFiles/main_exec.dir/src/developer_group.c.o	b3791ce8a3eaf750
-32	72	1678963578942634972	main_exec	6f37db89bf376c5
-0	35	1678963616139216414	CMakeFiles/main_exec.dir/src/developer_group.c.o	b3791ce8a3eaf750
-36	70	1678963616175216962	main_exec	6f37db89bf376c5
-1	104	1678963645583669132	CMakeFiles/main_exec.dir/src/main.c.o	eab3dc619cc957f2
-1	112	1678963645595669319	CMakeFiles/main_exec.dir/src/developer_group.c.o	b3791ce8a3eaf750
-113	189	1678963645671670501	main_exec	6f37db89bf376c5
+33	112	1679305243053832073	build.ninja	ccbf4878e8693c3
+67	101	1678963936692508386	main_exec	6f37db89bf376c5
+1	64	1678963936652507730	CMakeFiles/main_exec.dir/src/main.c.o	eab3dc619cc957f2
+1	67	1678963936656507795	CMakeFiles/main_exec.dir/src/developer_group.c.o	b3791ce8a3eaf750
+1	46	1678963936632507401	CMakeFiles/main_exec.dir/src/developer.c.o	5757b5bdf7f21734
