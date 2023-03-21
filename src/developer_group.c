@@ -35,7 +35,7 @@ void developer_group_init(developer_group *const developer_group, const char dev
 void print_developer(const developer developer[])
 {
     // for loop through the developer array of developer_group and printing them to the terminal
-    for (int i = 0; i < DEVELOPER_AMOUNT; i++)
+    for (unsigned short int i = 0; i < DEVELOPER_AMOUNT; i++)
     {
         printf("Developer %d ist : %s alias %s\n", i + 1, developer[i].name, developer[i].alias);
     }

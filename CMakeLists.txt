@@ -9,7 +9,7 @@ set(CMAKE_C_STANDARD 11)
 set(CMAKE_C_STANDARD_REQUIRED True)
 
 # add some compile options
-add_compile_options(-Wall -Wextra -pedantic -O0)
+add_compile_options(-Wall -Wextra -Werror -pedantic -O0)
 
 # add a library for your functions
 add_library(dev_library STATIC

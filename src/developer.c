@@ -16,6 +16,6 @@ void developer_init(developer *const developer, const char name[], const char al
     }
 
     // copy the name and alias via strncpy to the name and alias from the developer pointer
-    strncpy(developer->name, name, sizeof(developer->name));
-    strncpy(developer->alias, alias, sizeof(developer->alias));
+    strncpy(developer->name, name, MAX_NAMES_LENGTH);
+    strncpy(developer->alias, alias, MAX_ALIAS_LENGTH);
 }

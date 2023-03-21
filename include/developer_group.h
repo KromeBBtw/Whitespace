@@ -6,7 +6,7 @@
 #include "developer.h"
 
 // define variables for static numbers to easily change and access them
-#define MAX_LOGO_LENGTH 200
+#define MAX_LOGO_LENGTH 100
 #define DEVELOPER_AMOUNT 2
 
 // declare a variable which can be globally accessed for developer_group

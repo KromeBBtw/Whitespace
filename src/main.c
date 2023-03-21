@@ -35,37 +35,36 @@ int main()
         printf("Exit             \t\t[4]\n");
         printf("========================\033[0m\n");
 
-        // getting the wanted action from the user via scanf and storing it in input(int)
+        // getting the wanted action from the user via scanf and storing it in input(char)
         printf("Enter your selection: ");
-        scanf("%s", &input);
+        scanf(" %c", &input);
 
         // dependent of the input from the user ->  different results will get shown
-        // input(string) gets casted back to int but now in ascii so 49 = 1, 50 = 2, ...
-        switch ((int)input)
+        switch (input)
         {
-                // case Input = 1 -> show the names and alias of the developer
-            case 49:
+            // case Input = 1 -> show the names and alias of the developer
+            case '1':
                 print_developer(dev_group.developer);
                 break;
 
-                // case Input = 2 -> shows the logo of the group
-            case 50:
+            // case Input = 2 -> shows the logo of the group
+            case '2':
                 print_logo(&dev_group);
                 break;
 
-                // case Input = 3 -> show the names/alais of the developer and the grouplogo
-            case 51:
+            // case Input = 3 -> show the names/alais of the developer and the grouplogo
+            case '3':
                 print_developer(dev_group.developer);
                 print_logo(&dev_group);
                 break;
 
-                // case Input = 4 -> ends the application with ending the loop with loop_status
-            case 52:
+            // case Input = 4 -> ends the application with ending the loop with loop_status
+            case '4':
                 loop_status = 0;
                 break;
 
-                // case Input = nothing of the above -> giving the user the information that his
-                // input was not valid
+            // case Input = nothing of the above -> giving the user the information that his
+            // input was not valid
             default:
                 printf("That was not a valid input!\n");
                 break;
