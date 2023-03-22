@@ -1,9 +1,0 @@
-# ninja log v5
-42	82	1679308352367540999	CMakeFiles/main_exec.dir/src/developer.c.o	277bd1c6b589a556
-63	129	1679308352415541023	CMakeFiles/main_exec.dir/src/developer_group.c.o	11fd1d74ce6f2ac5
-1	61	1679422353206381496	CMakeFiles/main_exec.dir/src/main.c.o	845dd50b2fd63088
-94	116	1679422353258381538	main_exec	b28ae2ccbeb3c58b
-0	21	1679473772013678906	build.ninja	ccbf4878e8693c3
-0	49	1679422353194381486	CMakeFiles/dev_library.dir/src/developer.c.o	540cb624dcca0320
-1	51	1679422353194381486	CMakeFiles/dev_library.dir/src/developer_group.c.o	b5e3ce5c57b90d55
-52	94	1679422353238381522	libdev_library.a	de7226349b8ffd2
