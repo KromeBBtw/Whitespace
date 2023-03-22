@@ -42,7 +42,7 @@ void print_developer(const developer developer[])
 }
 
 // function to print the group_logo
-void print_logo(const developer_group *const developer_group)
+void print_logo(developer_group const * const developer_group)
 {
     // checking if the pointer is NULL
     // if so -> Error + return
