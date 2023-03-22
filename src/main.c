@@ -14,7 +14,7 @@ char input;
 int main()
 {
     // initialize and declare the dev_group variable
-    // will be holding the each developer and their logo
+    // will be holding each developer and their logo
     developer_group dev_group;
 
     // filling it with developer names and their alias
@@ -39,7 +39,7 @@ int main()
         printf("Enter your selection: ");
         scanf(" %c", &input);
 
-        // dependent of the input from the user ->  different results will get shown
+        // dependent on the input from the user ->  different results will get shown
         switch (input)
         {
             // case Input = 1 -> show the names and alias of the developer
