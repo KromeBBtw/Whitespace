@@ -51,14 +51,14 @@ build cmake_object_order_depends_target_dev_library: phony || CMakeFiles/dev_lib
 
 build CMakeFiles/dev_library.dir/src/developer.c.o: C_COMPILER__dev_library_Debug /workspaces/Whitespace/src/developer.c || cmake_object_order_depends_target_dev_library
   DEP_FILE = CMakeFiles/dev_library.dir/src/developer.c.o.d
-  FLAGS = -g -Wall -Wextra -pedantic -O0 -std=gnu11
+  FLAGS = -g -Wall -Wextra -Werror -pedantic -O0 -std=gnu11
   INCLUDES = -I/workspaces/Whitespace/include
   OBJECT_DIR = CMakeFiles/dev_library.dir
   OBJECT_FILE_DIR = CMakeFiles/dev_library.dir/src
 
 build CMakeFiles/dev_library.dir/src/developer_group.c.o: C_COMPILER__dev_library_Debug /workspaces/Whitespace/src/developer_group.c || cmake_object_order_depends_target_dev_library
   DEP_FILE = CMakeFiles/dev_library.dir/src/developer_group.c.o.d
-  FLAGS = -g -Wall -Wextra -pedantic -O0 -std=gnu11
+  FLAGS = -g -Wall -Wextra -Werror -pedantic -O0 -std=gnu11
   INCLUDES = -I/workspaces/Whitespace/include
   OBJECT_DIR = CMakeFiles/dev_library.dir
   OBJECT_FILE_DIR = CMakeFiles/dev_library.dir/src
@@ -90,7 +90,7 @@ build cmake_object_order_depends_target_main_exec: phony || cmake_object_order_d
 
 build CMakeFiles/main_exec.dir/src/main.c.o: C_COMPILER__main_exec_Debug /workspaces/Whitespace/src/main.c || cmake_object_order_depends_target_main_exec
   DEP_FILE = CMakeFiles/main_exec.dir/src/main.c.o.d
-  FLAGS = -g -Wall -Wextra -pedantic -O0 -std=gnu11
+  FLAGS = -g -Wall -Wextra -Werror -pedantic -O0 -std=gnu11
   INCLUDES = -I/workspaces/Whitespace/include
   OBJECT_DIR = CMakeFiles/main_exec.dir
   OBJECT_FILE_DIR = CMakeFiles/main_exec.dir/src
