@@ -27,6 +27,6 @@ void developer_group_init(developer_group *const developer_group, const char dev
 void print_developer(const developer developer[]);
 
 // function to print the group logo
-void print_logo(const developer_group *const developer_group);
+void print_logo(developer_group const * const developer_group);
 
 #endif
